@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sustainable Farming Innovation in Paikgacha, Khulna - Integrated circular farming with coral fish, BSF larvae, organic poultry, biogas and renewable energy">
+    <meta name="keywords" content="sustainable farming, Bangladesh agriculture, circular farming, organic poultry, biogas, renewable energy, coral fish farming, Black Soldier Fly">
+    <meta name="author" content="Hussain Billah">
+    <meta property="og:title" content="Sustainable Farming Innovation – Powered by Nature">
+    <meta property="og:description" content="Integrated circular farming project in Paikgacha, Khulna combining aquaculture, organic farming and renewable energy">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sustainablefarmingpaikgacha.com">
+    <title>Sustainable Farming Innovation – Powered by Nature | Paikgacha, Khulna</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #1B5E20;
+            --accent: #FF9800;
+            --bg: #f9f8f3;
+            --text: #333;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text);
+            background-color: var(--bg);
+            line-height: 1.6;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            width: 100%;
+        }
+        
+        section {
+            padding: 60px 0;
+        }
+        
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            min-height: 500px;
+            max-height: 1200px;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') no-repeat center center/cover;
+            color: white;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 20px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            margin-bottom: 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--accent);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        
+        .btn:hover, .btn:focus {
+            background-color: #e68900;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            outline: none;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+        }
+        
+        .btn-primary:hover {
+            background-color: #124317;
+        }
+        
+        /* Project Overview */
+        .overview {
+            text-align: center;
+        }
+        
+        .overview h2 {
+            margin-bottom: 30px;
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+        }
+        
+        .overview p {
+            max-width: 800px;
+            margin: 0 auto 30px;
+            font-size: clamp(0.9rem, 2vw, 1rem);
+        }
+        
+        /* Components Section */
+        .components {
+            background-color: white;
+        }
+        
+        .components h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+        }
+        
+        .component-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .component-card {
+            background-color: var(--bg);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .component-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .component-card i {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        .component-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        .component-card p {
+            font-size: 0.9rem;
+        }
+        
+        /* Funding Sections */
+        .funding-section {
+            text-align: center;
+            padding: 50px 0;
+        }
+        
+        .funding-section h2 {
+            margin-bottom: 20px;
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+        }
+        
+        .funding-section p {
+            max-width: 700px;
+            margin: 0 auto 25px;
+            font-size: clamp(0.9rem, 2vw, 1rem);
+        }
+        
+        .equity {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .equity h2, .equity p {
+            color: white;
+        }
+        
+        /* Founder Section */
+        .founder {
+            text-align: center;
+        }
+        
+        .founder h2 {
+            margin-bottom: 30px;
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+        }
+        
+        .founder-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 5px solid var(--accent);
+        }
+        
+        .founder h3 {
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+        }
+        
+        .founder p.position {
+            color: var(--accent);
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .founder p.bio {
+            max-width: 600px;
+            margin: 0 auto 25px;
+            font-size: 0.9rem;
+        }
+        
+        /* Contact Section */
+        .contact {
+            background-color: white;
+            text-align: center;
+            padding-bottom: 0;
+        }
+        
+        .contact h2 {
+            margin-bottom: 30px;
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        
+        .contact-info p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 0.95rem;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: auto;
+        }
+        
+        /* Animations */
+        [data-aos] {
+            opacity: 0;
+            transition: opacity 0.8s, transform 0.8s;
+        }
+        
+        [data-aos="fade-up"] {
+            transform: translateY(30px);
+        }
+        
+        [data-aos="fade-down"] {
+            transform: translateY(-30px);
+        }
+        
+        [data-aos="fade-left"] {
+            transform: translateX(-30px);
+        }
+        
+        [data-aos="fade-right"] {
+            transform: translateX(30px);
+        }
+        
+        [data-aos].aos-animate {
+            opacity: 1;
+            transform: translate(0);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            section {
+                padding: 50px 0;
+            }
+            
+            .component-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .funding-section {
+                padding: 40px 0;
+            }
+            
+            .contact {
+                padding: 50px 0 0;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .btn {
+                padding: 10px 25px;
+            }
+            
+            section {
+                padding: 40px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 data-aos="fade-down">Sustainable Farming Innovation – Powered by Nature</h1>
+            <p data-aos="fade-up" data-aos-delay="200">An integrated circular farming project for Coral Fish, Black Soldier Fly, Organic Poultry, Biogas, and Renewable Energy</p>
+            <a href="#overview" class="btn" data-aos="fade-up" data-aos-delay="400">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section id="overview" class="overview">
+        <div class="container">
+            <h2 data-aos="fade-up">Project Vision</h2>
+            <p data-aos="fade-up" data-aos-delay="200">
+                Our revolutionary model of integrated, sustainable agriculture in Paikgacha, Khulna transforms rural food and energy systems. Starting on 1 acre of land with plans to expand to 10 acres by 2027, we're building a zero-waste, pesticide-free ecosystem that empowers communities while ensuring food security and generating renewable energy. By combining coral fish farming with Black Soldier Fly larvae-based feed, organic poultry in elevated coops, papaya and brinjal cultivation for organic feed, biogas from poultry waste, and hybrid solar-wind energy systems, we've created a completely circular farming approach. This climate-smart agriculture model serves as both a productive farm and research-ready setup for future agricultural innovation in Bangladesh.
+            </p>
+        </div>
+    </section>
+
+    <!-- Components Section -->
+    <section class="components">
+        <div class="container">
+            <h2 data-aos="fade-up">Project Components</h2>
+            <div class="component-grid">
+                <div class="component-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-fish"></i>
+                    <h3>Coral Fish Farming</h3>
+                    <p>We are cultivating coral fish (Koral) in a 1-acre pond using a sustainable feed model based on Black Soldier Fly (BSF) larvae. This feed offers high protein, promotes rapid growth, and eliminates the need for chemical supplements or antibiotics. The system ensures clean, nutrient-rich aquaculture.</p>
+                </div>
+                
+                <div class="component-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-bug"></i>
+                    <h3>Black Soldier Fly Unit</h3>
+                    <p>BSF farming will be set up in net-enclosed structures to prevent uncontrolled spreading. The BSF larvae are fed clean, organic matter—primarily papaya and brinjal—grown pesticide-free around the pond. We aim to produce 1500-1800kg of BSF larvae daily, which will be used 75% as feed for both fish and poultry.</p>
+                </div>
+                
+                <div class="component-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-kiwi-bird"></i>
+                    <h3>Organic Poultry on Elevated Coop</h3>
+                    <p>Over the pond water, we will build elevated platforms (Tong houses) to rear 4,000 chickens. These structures reduce land use, improve hygiene, and allow poultry waste to fall directly into collection pits for biogas production.</p>
+                </div>
+                
+                <div class="component-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Papaya & Brinjal Cultivation</h3>
+                    <p>We will grow fast-growing, pesticide-free papaya and brinjal around the pond. These crops are exclusively used as feed input for the BSF larvae, ensuring the circular ecosystem remains clean and safe.</p>
+                </div>
+                
+                <div class="component-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-recycle"></i>
+                    <h3>Biogas Energy Unit</h3>
+                    <p>Poultry waste will be converted into biogas using digesters. The gas will be used for clean cooking by local households, while the slurry will be applied as organic fertilizer—reducing dependency on chemical inputs.</p>
+                </div>
+                
+                <div class="component-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-solar-panel"></i>
+                    <h3>Solar Power System</h3>
+                    <p>Rooftop solar panels will be installed over poultry sheds to generate clean energy. The system is designed for easy expansion as the project grows, with smart energy management that integrates with our other power sources.</p>
+                </div>
+                
+                <div class="component-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-fan"></i>
+                    <h3>Wind Turbine Tower</h3>
+                    <p>High-capacity wind turbines (30KW to 50KW) will be installed on elevated towers to harness the coastal wind of Paikgacha, ensuring power surplus to distribute locally, especially during monsoon seasons.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equity Funding Section -->
+    <section class="funding-section equity">
+        <div class="container">
+            <h2 data-aos="fade-up">Invest in the Future of Sustainable Farming</h2>
+            <p data-aos="fade-up" data-aos-delay="200">We invite impact investors to participate through equity partnership in our profitable, scalable model. Your investment supports the farm's expansion to 10 acres by 2027 while earning returns from multiple revenue streams including organic produce, renewable energy, and sustainable aquaculture.</p>
+            <a href="https://wa.me/8801919391942" class="btn btn-primary" data-aos="fade-up" data-aos-delay="400">Become an Equity Partner</a>
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section class="funding-section">
+        <div class="container">
+            <h2 data-aos="fade-up">Support a Green Future</h2>
+            <p data-aos="fade-up" data-aos-delay="200">Help us scale this climate-smart agriculture model across rural Bangladesh. Your donations directly support farm expansion, community training programs, and renewable energy infrastructure. We maintain 100% transparency with regular impact reports to all supporters.</p>
+            <a href="https://wa.me/8801919391942" class="btn" data-aos="fade-up" data-aos-delay="400">Donate Now</a>
+        </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section class="founder">
+        <div class="container">
+            <h2 data-aos="fade-up">Meet The Founder</h2>
+            <img src="https://i.postimg.cc/KY3SQRy3/20250714-213304.png" alt="Hussain Billah - Founder of Sustainable Farming Project" class="founder-img" data-aos="fade-up" data-aos-delay="200">
+            <h3 data-aos="fade-up" data-aos-delay="300">Hussain Billah</h3>
+            <p class="position" data-aos="fade-up" data-aos-delay="400">Founder & Project Director</p>
+            <p class="bio" data-aos="fade-up" data-aos-delay="500">A visionary agricultural entrepreneur with 8+ years in sustainable farming practices, Hussain combines traditional knowledge with modern innovation. His passion for community empowerment and environmental conservation drives this integrated farming model that's transforming rural livelihoods in Khulna.</p>
+            <a href="https://wa.me/8801919391942" class="btn" data-aos="fade-up" data-aos-delay="600">Contact via WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <h2 data-aos="fade-up">Contact & Location</h2>
+            <div class="contact-info" data-aos="fade-up" data-aos-delay="200">
+                <p><i class="fas fa-map-marker-alt"></i> Minaj Bazar, Paikgacha, Khulna</p>
+                <p><i class="fas fa-phone"></i> +8801919391942</p>
+                <p><i class="fas fa-envelope"></i> hussainbillah32@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer data-aos="fade-up">
+        <div class="container">
+            <p>© 2025 Hussain Billah | Sustainable Bangladesh Initiative</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple AOS implementation
+        document.addEventListener('DOMContentLoaded', function() {
+            const aosElements = document.querySelectorAll('[data-aos]');
+            
+            function checkAOS() {
+                aosElements.forEach(el => {
+                    const rect = el.getBoundingClientRect();
+                    const isVisible = (rect.top <= window.innerHeight * 0.75) && (rect.bottom >= 0);
+                    
+                    if (isVisible) {
+                        el.classList.add('aos-animate');
+                    }
+                });
+            }
+            
+            // Initial check
+            checkAOS();
+            
+            // Check on scroll with debounce
+            let isScrolling;
+            window.addEventListener('scroll', function() {
+                window.clearTimeout(isScrolling);
+                isScrolling = setTimeout(checkAOS, 50);
+            }, { passive: true });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        window.scrollTo({
+                            top: target.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
